@@ -138,7 +138,7 @@ function chart4(a){
         data: {
             labels: a,
             datasets: [{
-                label: 'Temperature (F)',
+                label: 'Temperature (C)',
                 data: a,
                 backgroundColor: [
                     'rgba(75, 192, 192, 0.2)',
@@ -179,7 +179,7 @@ function chart5(a){
         data: {
             labels: a,
             datasets: [{
-                label: 'Temperature (C)',
+                label: 'Temperature (F)',
                 data: a,
                 backgroundColor: [
                     'rgba(153, 102, 255, 0.2)',
