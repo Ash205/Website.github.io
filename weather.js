@@ -7,7 +7,7 @@
 		var t;
         //strin = document.getElementById("textid").value;
         strin = 'Vellore';
-		console.log('strin');
+		//console.log('strin');
 		
 		//  var weatheri = new XMLHttpRequest();
 		//  weatheri.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=42887748873fe90166f5c7d3bea86697", false);

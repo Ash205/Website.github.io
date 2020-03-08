@@ -46,16 +46,33 @@
                         var temp = Object.keys(maindata[keys[i]]);
                         //console.log(keys[i] + maindata[keys[i]][temp[temp.length-1]]);
                         a[i].push(maindata[keys[i]][temp[temp.length-1]]);
-                        if(a[5].length>5){
-                            chart1(a[0].slice(a[i].length - 6));
-                             chart2(a[1].slice(a[i].length - 6));
-                            chart3(a[2].slice(a[i].length - 6));
-                            chart4(a[3].slice(a[i].length - 6));
-                            chart5(a[4].slice(a[i].length - 6));
-                            chart6(a[5].slice(a[i].length - 6));
-                            f();
+                        if((a[i].length>6)){
+                            a[i] = a[i].slice(a[i].length - 6);
                         }
+                        
+                            chart1(a[0]);
+                            chart2(a[1]);
+                            chart3(a[2]);
+                            chart4(a[3]);
+                            chart5(a[4]);
+                            chart6(a[5]);
+                            f();
+                        
                     }
+                    // for(let i=0; i<keys.length; i++){
+                    //     var temp = Object.keys(maindata[keys[i]]);
+                    //     //console.log(keys[i] + maindata[keys[i]][temp[temp.length-1]]);
+                    //     a[i].push(maindata[keys[i]][temp[temp.length-1]]);
+                    //     if(a[5].length>5){
+                    //         chart1(a[0].slice(a[i].length - 6));
+                    //          chart2(a[1].slice(a[i].length - 6));
+                    //         chart3(a[2].slice(a[i].length - 6));
+                    //         chart4(a[3].slice(a[i].length - 6));
+                    //         chart5(a[4].slice(a[i].length - 6));
+                    //         chart6(a[5].slice(a[i].length - 6));
+                    //         f();
+                    //     }
+                    // }
                     // for(let i=0; i<keys.length; i++){
                     //     //var temp = Object.keys(maindata[keys[i]]);
                     //     console.log(maindata[keys[i]]);
