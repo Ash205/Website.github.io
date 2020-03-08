@@ -9,7 +9,7 @@
         <script src="chartjs.js"></script>
         <script src="weather.js"></script>
     </head>
-    <body>
+    <body style="background-color: #1A2035;">
         <script>
             $(document).ready(function(){
                 var a = new Array(6);
@@ -96,18 +96,34 @@
                 }
             });
         </script>
-        <div class="py-5 text-center"><h2>Team Blitzkrieg</h2></div>
-        <div class="container">
+        <style>
+            .border{
+                border-radius: 5px;
+            }
+            .candiv{
+                background-color: #1F283F;
+                color: #838FA8;
+                border-color: black;
+                box-shadow: 5px 5px #838FA8;
+                padding:10px;
+                margin: 0 auto;
+            }
+        </style>
+        <div class="py-5 text-center" style="color: cornsilk;"><h2>Team Blitzkrieg</h2></div>
+        <div class="container" style="background-color: #2A2C3F;border-radius: 5px;">
+            <br>
             <div class="row">
-                <div class="col-4"><canvas width="200" height="200" id="c1"></canvas></div>
-                <div class="col-4"><canvas width="200" height="200" id="c2"></canvas></div>
-                <div class="col-4"><canvas width="200" height="200" id="c3"></canvas></div>
+                <div class="col-3 border candiv" ><b>HEAT INDEX</b><canvas width="100" height="100" id="c1"></canvas></div>
+                <div class="col-3 border candiv" ><b>HUMIDITY</b><canvas width="100" height="100" id="c2"></canvas></div>
+                <div class="col-3 border candiv" ><b>MOISTURE</b><canvas width="100" height="100" id="c3"></canvas></div>
             </div>
+            <br>
             <div class="row">
-                <div class="col-4"><canvas width="200" height="200" id="c4"></canvas></div>
-                <div class="col-4"><canvas width="200" height="200" id="c5"></canvas></div>
-                <div class="col-4"><canvas width="200" height="200" id="c6"></canvas></div>
+                <div class="col-3 border candiv" ><b>TEMPERATURE (C)</b><canvas width="200" height="200" id="c4"></canvas></div>
+                <div class="col-3 border candiv" ><b>TEMPERATURE (F)</b><canvas width="200" height="200" id="c5"></canvas></div>
+                <div class="col-3 border candiv" ><b>WATER LEVEL</b><canvas width="200" height="200" id="c6"></canvas></div>
             </div>
+            <br>
         </div>
         <div class = "container">
 	
