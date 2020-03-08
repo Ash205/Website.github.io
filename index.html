@@ -6,6 +6,7 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="chartjs.js"></script>
+        <script src="weather.js"></script>
     </head>
     <body>
         <script>
@@ -52,6 +53,7 @@
                             chart4(a[3].slice(a[i].length - 6));
                             chart5(a[4].slice(a[i].length - 6));
                             chart6(a[5].slice(a[i].length - 6));
+                            f();
                         }
                     }
                     // for(let i=0; i<keys.length; i++){
@@ -89,5 +91,51 @@
                 <div class="col-4"><canvas width="200" height="200" id="c6"></canvas></div>
             </div>
         </div>
+        <div class = "container">
+	
+            <div class="py-5 text-center">
+                <!-- <br/><br>
+                <form class="form-inline"  style="text-align: center;">
+                <button onclick = "f();" class="btn btn-outline-light" type = "button"><i class="fa fa-search"></i></button>
+                </form> -->
+                <br/>
+                
+                
+                
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header"> 
+                      <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                         <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="home" aria-selected="true">Weather</a>
+                        </li>
+                       </ul>
+                    </div>
+                    <div class="card-body">
+                     <div class="tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="home-tab" style="color:black"></div>
+                    </div>
+                    </div>
+                  </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header"> 
+              <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+                <li class="nav-item">
+                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Location</a>
+                </li>
+               </ul>
+            </div>
+            <div class="card-body">
+             <div class="tab-content" id="myTabContent">
+             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="color:black"></div>
+            </div>
+            </div>
+          </div>	
+        
+        
+            </div>
+            
+            
+            </div>
     </body>
 </html>
