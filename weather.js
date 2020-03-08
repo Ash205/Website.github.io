@@ -32,7 +32,7 @@
 		
 		document.getElementById("home").innerHTML = loc;
 		document.getElementById("profile").innerHTML = des;
-		//document.getElementById("contact").innerHTML = t;
+		document.getElementById("contact").innerHTML = t;
 		}
 		})
 		
